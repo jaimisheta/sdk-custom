@@ -4,5 +4,5 @@
     var wcS = document.getElementsByTagName('HTML')[0].outerHTML.length
     console.log('url', wcU)
     console.log('date', wcD)
-    console.log('size in kb', wcS)
+    console.log('size in kb for page', wcS)
 })(this)
