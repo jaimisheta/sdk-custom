@@ -1,6 +1,6 @@
 (function (window, t) {
     var wcU = decodeURIComponent(window.location.href)
-    var wcD = new Date(Date.now()).toDateString()
+    var wcD = new Date(Date.now()).toUTCString()
     var wcS = document.getElementsByTagName('HTML')[0].outerHTML.length
     console.log('url', wcU)
     console.log('date', wcD)
