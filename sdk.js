@@ -1,3 +1,4 @@
 (function (window, t) {
-    console.log('hds')
+    var wcU = encodeURIComponent(window.location.href)
+    console.log('url', wcU)
 })(this)
