@@ -5,4 +5,30 @@
     console.log('url', wcU)
     console.log('date', wcD)
     console.log('size in kb for page', wcS)
+    var myHeaders = new Headers();
+myHeaders.append("Content-Type", "application/json");
+
+var raw = JSON.stringify({
+  "version": 2,
+  "url": "testing.com",
+  "source": "Dubai",
+  "destination": "Cairo",
+  "numberOfHops": 17,
+  "monthlyVisitors": 200000,
+  "greenHosting": true,
+  "renewableEnergyPercent": 4,
+  "save": false
+});
+
+var requestOptions = {
+  method: 'POST',
+  headers: myHeaders,
+  body: raw,
+  redirect: 'follow'
+};
+
+fetch("http://localhost:8000/report/", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
 })(this)
