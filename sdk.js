@@ -10,7 +10,7 @@ myHeaders.append("Content-Type", "application/json");
 
 var raw = JSON.stringify({
   "version": 2,
-  "url": "https://rdbrck.com",
+  "url": "https://rdbrck.bamboohr.com/login",
 });
 
 var requestOptions = {
