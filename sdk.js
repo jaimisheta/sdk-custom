@@ -27,7 +27,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://localhost:8000/report/", requestOptions)
+fetch("http://localhost:8000/sdk/", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
