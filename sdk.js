@@ -11,13 +11,6 @@ myHeaders.append("Content-Type", "application/json");
 var raw = JSON.stringify({
   "version": 2,
   "url": "https://rdbrck.com",
-  "source": "Dubai",
-  "destination": "Cairo",
-  "numberOfHops": 17,
-  "monthlyVisitors": 8000,
-  "greenHosting": true,
-  "renewableEnergyPercent": 4,
-  "save": false
 });
 
 var requestOptions = {
