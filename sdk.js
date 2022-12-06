@@ -17,7 +17,7 @@ var raw = JSON.stringify({
   "monthlyVisitors": 200000,
   "greenHosting": true,
   "renewableEnergyPercent": 4,
-  "save": false
+  "save": true
 });
 
 var requestOptions = {
