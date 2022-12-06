@@ -14,7 +14,7 @@ var raw = JSON.stringify({
   "source": "Dubai",
   "destination": "Cairo",
   "numberOfHops": 17,
-  "monthlyVisitors": 200000,
+  "monthlyVisitors": 8000,
   "greenHosting": true,
   "renewableEnergyPercent": 4,
   "save": true
